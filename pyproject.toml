@@ -64,6 +64,7 @@ furo = "^2022.3.4"
 myst-parser = "^0.16"
 mypy = "^0.941"
 safety = "^1.10.3"
+types-toml = "^0.10.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -230,7 +231,7 @@ allowlist_externals = make
                       /bin/bash
                       poetry
 
-whitelist_externals = {[testenv]allowlist_externals}
+#whitelist_externals = {[testenv]allowlist_externals}
 
 skip_install = true
 commands =
